@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 850" role="img">
+<rect width="700" height="850" fill="#111116"/><rect width="700" height="850" fill="url(#g)" opacity=".7"/>
+<defs><pattern id="g" width="35" height="35" patternUnits="userSpaceOnUse"><path d="M35 0H0V35" fill="none" stroke="#fff" stroke-opacity=".06"/></pattern></defs>
+<path d="M-50 620 C120 180 250 850 380 260 S600 160 760 580" fill="none" stroke="#ff7a00" stroke-width="120"/>
+<path d="M-30 650 C130 300 270 790 410 330 S600 250 750 620" fill="none" stroke="#d7ff00" stroke-width="55"/>
+<circle cx="510" cy="250" r="105" fill="#ff3d81" opacity=".9"/>
+<path d="M90 110 L610 740" stroke="#fff" stroke-width="8" opacity=".8"/>
+<text x="65" y="445" font-family="Arial Black" font-size="92" fill="#fff" stroke="#000" stroke-width="8" paint-order="stroke">FURIA</text>
+<text x="70" y="500" font-family="Arial" font-size="22" fill="#fff" letter-spacing="8">STREET / ORIGINAL</text>
+</svg>

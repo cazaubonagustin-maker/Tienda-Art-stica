@@ -1,0 +1,11 @@
+.hero-home h1 {
+  animation: glitch 8s infinite;
+
+  span { color: $accent; }
+}
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}

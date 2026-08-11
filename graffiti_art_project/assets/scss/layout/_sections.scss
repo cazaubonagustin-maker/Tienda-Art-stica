@@ -1,0 +1,59 @@
+.section-pad { padding: 7rem 0; }
+
+.section-dark {
+  background: $surface;
+  border-block: 1px solid $border;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 2rem;
+  margin-bottom: 3rem;
+
+  h2 { margin: 0; }
+}
+
+.manifesto {
+  background:
+    linear-gradient(135deg, rgba($accent, .08), transparent 50%),
+    $bg;
+  border-block: 1px solid $border;
+}
+
+.ticker {
+  overflow: hidden;
+  background: $accent;
+  color: #000;
+  padding: .8rem 0;
+  border-block: 1px solid #000;
+
+  .ticker-track {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font: 1.5rem $font-display;
+    letter-spacing: .08em;
+    animation: marquee 20s linear infinite;
+
+    i { font-size: .9rem; }
+  }
+}
+
+.about-poster {
+  border: 1px solid $border;
+  padding: .5rem;
+  background: $surface;
+}
+
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+@keyframes glitch {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(-2px, 1px); }
+  40% { transform: translate(2px, -1px); }
+  60% { transform: translate(-1px, -2px); }
+  80% { transform: translate(1px, 2px); }
+}

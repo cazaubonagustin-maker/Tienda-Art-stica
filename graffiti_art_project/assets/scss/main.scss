@@ -1,0 +1,85 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/reset";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/navbar";
+@import "components/cards";
+@import "components/forms";
+
+@import "layout/header";
+@import "layout/sections";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/galeria";
+@import "pages/nosotros";
+@import "pages/contacto";
+@import "extends";
+
+.skip-link {
+  position: fixed;
+  left: -9999px;
+  top: 1rem;
+  z-index: 9999;
+  background: $accent;
+  color: #000;
+  padding: .75rem 1rem;
+  font-weight: 700;
+
+  &:focus { left: 1rem; }
+}
+
+.min-vh-75 { min-height: 75vh; }
+
+.back-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid $accent;
+  background: $bg;
+  color: $accent;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all $transition;
+  z-index: 999;
+
+  &.show { opacity: 1; visibility: visible; transform: translateY(0); }
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 700ms ease, transform 700ms ease;
+
+  &.revealed { opacity: 1; transform: translateY(0); }
+}
+
+@include responsive(991px) {
+  .nav-cta { margin-top: .5rem; display: inline-block; }
+  .artist-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@include responsive(767px) {
+  h1 { font-size: clamp(3.5rem, 18vw, 6rem); }
+  h2 { font-size: clamp(2.8rem, 13vw, 4.5rem); }
+  .section-pad { padding: 5rem 0; }
+  .section-heading { align-items: start; flex-direction: column; }
+  .page-hero { padding: 5rem 0 3rem; }
+  .artist-profile { grid-template-columns: 1fr; }
+  .artist-avatar { max-width: 220px; }
+  .artist-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; }
+  .stats-row { gap: 1.2rem; }
+  .stats-row strong { font-size: 2.1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

@@ -1,0 +1,22 @@
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  border: 1px solid $border;
+  background: transparent;
+  color: $muted;
+  padding: .6rem 1rem;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  cursor: pointer;
+  transition: all $transition;
+
+  &:hover, &.active { background: $accent; color: #000; border-color: $accent; }
+}
+
+.gallery-item.is-hidden { display: none; }

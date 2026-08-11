@@ -1,0 +1,57 @@
+.contact-form {
+  padding: 2rem;
+  background: $surface;
+  border: 1px solid $border;
+
+  label {
+    display: block;
+    margin-bottom: .45rem;
+    color: $text;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    border: 1px solid $border;
+    border-radius: 0;
+    background: $bg;
+    color: $text;
+    padding: .9rem 1rem;
+    outline: none;
+    transition: border-color $transition, box-shadow $transition;
+
+    &:focus {
+      border-color: $accent;
+      box-shadow: 0 0 0 3px rgba($accent, .1);
+    }
+  }
+
+  select option { background: $bg; }
+  textarea { resize: vertical; }
+}
+
+.contact-list {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid $border;
+
+    i { color: $accent; font-size: 1.2rem; }
+    span { color: $text; font-size: .9rem; }
+  }
+}
+
+.form-message {
+  margin: .8rem 0 0;
+  color: $accent;
+  font-size: .85rem;
+}

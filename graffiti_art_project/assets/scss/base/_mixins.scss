@@ -1,0 +1,23 @@
+@mixin accent-line {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background: $accent;
+  margin-bottom: 1.25rem;
+}
+
+@mixin hover-lift {
+  transition: transform $transition, border-color $transition, box-shadow $transition;
+  &:hover {
+    transform: translateY(-7px);
+    border-color: rgba($accent, .55);
+    box-shadow: $shadow;
+  }
+}
+
+@mixin responsive($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}

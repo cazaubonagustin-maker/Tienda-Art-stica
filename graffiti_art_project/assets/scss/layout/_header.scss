@@ -1,0 +1,50 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    @include accent-line;
+  }
+}
+
+.hero-home {
+  min-height: 75vh;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 75% 35%, rgba($accent-2, .16), transparent 28%),
+    radial-gradient(circle at 30% 70%, rgba($cyan, .12), transparent 30%),
+    $bg;
+}
+
+.hero-text { max-width: 600px; font-size: 1.15rem; margin: 1.5rem 0 2rem; }
+
+.hero-art {
+  position: relative;
+  max-width: 520px;
+  margin-inline: auto;
+
+  img { width: 100%; filter: drop-shadow(0 25px 50px rgba(0,0,0,.5)); }
+
+  .stamp {
+    position: absolute;
+    right: -15px;
+    bottom: 30px;
+    padding: .75rem;
+    border: 2px solid $accent;
+    color: $accent;
+    font: 1rem/1 $font-display;
+    letter-spacing: .08em;
+    transform: rotate(8deg);
+  }
+}
+
+.page-hero {
+  padding: 8rem 0 5rem;
+  border-bottom: 1px solid $border;
+  background:
+    linear-gradient(90deg, rgba($accent, .05), transparent 40%),
+    $bg;
+
+  p:last-child { max-width: 650px; font-size: 1.15rem; }
+}

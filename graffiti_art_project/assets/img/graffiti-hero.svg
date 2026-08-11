@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 850" role="img">
+<defs>
+ <filter id="rough"><feTurbulence baseFrequency=".015" numOctaves="2" seed="3" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="10"/></filter>
+ <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#fff" stroke-opacity=".07"/></pattern>
+</defs>
+<rect width="700" height="850" fill="#15151a"/><rect width="700" height="850" fill="url(#grid)"/>
+<circle cx="355" cy="410" r="220" fill="#d7ff00" opacity=".9" filter="url(#rough)"/>
+<path d="M70 570 C160 300 210 650 315 330 S520 180 630 510" fill="none" stroke="#ff3d81" stroke-width="70" filter="url(#rough)"/>
+<path d="M70 600 C190 430 250 720 350 430 S520 280 640 570" fill="none" stroke="#00e5ff" stroke-width="35"/>
+<text x="70" y="160" font-family="Arial Black" font-size="100" fill="#fff" transform="rotate(-8 70 160)">RU</text>
+<text x="135" y="245" font-family="Arial Black" font-size="130" fill="#0b0b0d" stroke="#fff" stroke-width="3">IDO</text>
+<path d="M70 740 L610 90" stroke="#d7ff00" stroke-width="7"/><circle cx="560" cy="700" r="35" fill="#ff7a00"/>
+</svg>
